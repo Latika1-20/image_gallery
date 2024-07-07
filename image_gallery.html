@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        img{padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="C:\Users\Lenovo\Downloads\image1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="c:\Users\Lenovo\Downloads\image1.jpg" width="300" height="300" onclick="openFullImg(this.src)"> 
+        <img src="c:\Users\Lenovo\Downloads\image2.jpg" width="300" height="300" onclick="openFullImg(this.src)">
+        <img src="C:\Users\Lenovo\Downloads\image3.jpg" width="300" height="300" onclick="openFullImg(this.src)">
+        <img src="C:\Users\Lenovo\Downloads\image4.jpg" width="300" height="300" onclick="openFullImg(this.src)">
+        <img src="C:\Users\Lenovo\Downloads\image5.jpg" width="300" height="300" onclick="openFullImg(this.src)">
+        <img src="C:\Users\Lenovo\Downloads\image6.jpg" width="300" height="300" onclick="openFullImg(this.src)">
+        <img src="C:\Users\Lenovo\Downloads\image7.jpg" width="300" height="300" onclick="openFullImg(this.src)">
+        <img src="C:\Users\Lenovo\Downloads\image8.jpg" width="300" height="300" onclick="openFullImg(this.src)">
+    </div>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+</script>
+</body>
+</html>
